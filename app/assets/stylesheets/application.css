@@ -18,3 +18,13 @@
   padding:0;
   box-sizing:border-box;
 }
+
+
+body{
+  margin:33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #333;
+  line-height:18px;
+  font-size:13px;
+  display:block;
+}
