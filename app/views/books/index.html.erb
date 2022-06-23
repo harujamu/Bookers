@@ -27,6 +27,16 @@
 <div class="form-box">
   <h2 class="heading">New Book</h2>
   
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %> errors prohibited this book from being saved:
+    <ul>
+        <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+    </ul>
+  <% end %>
+  
+  
   <%= form_with model: @book do |f| %>
   <div class="title-box">
     <h4 class="title-form">Title</h4>
