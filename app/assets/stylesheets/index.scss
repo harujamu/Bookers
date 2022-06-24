@@ -24,3 +24,48 @@ input[type = "submit"]{
 .title-box, .body-box, .submit{
   margin-bottom:10px;
 }
+
+.error {
+  width:450px;
+  border:2px solid #red;
+  padding:7px;
+  padding-bottom:0;
+  margin-bottom:20px;
+  background-color:#f0f0f0;
+}
+
+.error h2{
+  background-color:#c00;
+  text-align:left;
+  padding:5px 5px 5px 15px;
+  font-size:12px;
+  margin:-7px;
+  margin-bottom:0;
+  color: #fff;
+}
+
+.error ul{
+  margin:33px;
+  padding:40px;
+  padding-right:0;
+  padding-top:0;
+  padding-bottom:0
+}
+
+
+li{
+  display:list-item;
+  text-align:-webkit-match-parent;
+}
+
+.error-title-box{
+  padding:2px;
+  background-color:#red;
+  display:table;
+}
+
+.error-body-box{
+  padding:2px;
+  background-color:#red;
+  display:table;
+}
