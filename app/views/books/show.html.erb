@@ -1,9 +1,10 @@
-<!--バリデーション成功(Create)-->
+<!--フラッシュメッセージ-->
+<% if flash[:notice] %>
+  <div class="notice" role="notice">
+    <p><%= flash[:notice] %></p>
+  </div>
+<% end %>
 
-<p class="validates-clear">Book was successfully created.</p>
-
-<!--バリデージョン成功(Update)-->
-<p class="validates-clear">Book was successfully updated.</p>
 
 <p><strong>Title:</strong><%= @book.title %></p>
 
