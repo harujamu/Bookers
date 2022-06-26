@@ -2,7 +2,7 @@
 <div class="form-box">
   <h1>Editing Book</h1>
   
-  <%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
+  <%= form_with model: @book, url: edit_book_path(@book.id), method: :patch do |f| %>
 
   <!--バリデーションエラー-->
   <% if @book.errors.any? %>
@@ -32,7 +32,8 @@
     <%= f.submit 'Update Book' %>
   </div>
   
-<% end %></div>
+  <% end %>
+</div>
 
 <div class="action">
   <%= link_to'Show', book_path(@book.id) %> | <%= link_to'Back',  '/books' %>
