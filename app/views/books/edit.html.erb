@@ -2,11 +2,11 @@
 <div class="form-box">
   <h1>Editing Book</h1>
   
-  <%= form_with model: @book, url: edit_book_path(@book.id), method: :patch do |f| %>
+  <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
 
   <!--バリデーションエラー-->
   <% if @book.errors.any? %>
-  <div class="error-message">
+  <form class="error-message">
     <h2><%= @book.errors.count %> error prohibited this book from being saved:</h2>
     <ul>
     <% @book.errors.full_messages.each do |message| %>
@@ -15,8 +15,8 @@
       </li>
     <% end %>
     </ul>
-  </div>
   <% end %>
+  </form>
   
   <div class="title-box">
     <h4 class="title-form">Title</h4>
