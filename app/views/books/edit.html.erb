@@ -6,7 +6,7 @@
 
   <!--バリデーションエラー-->
   <% if @book.errors.any? %>
-  <form class="error-message">
+  <div class="error-message">
     <h2><%= @book.errors.count %> error prohibited this book from being saved:</h2>
     <ul>
     <% @book.errors.full_messages.each do |message| %>
@@ -15,8 +15,9 @@
       </li>
     <% end %>
     </ul>
+  </div>
   <% end %>
-  </form>
+  
   
   <div class="title-box">
     <h4 class="title-form">Title</h4>
